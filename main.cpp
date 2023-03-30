@@ -29,47 +29,12 @@ int main()
         int seatNumber;
         cout << "Enter the seat number: ";
         cin >> seatNumber;
-        if(seatNumber > 80)
-        {
-            row = 8;
-            column = (seatNumber%80) - 1;
-        }
-        if(seatNumber > 70)
-        {
-            row = 7;
-            column = (seatNumber%70) - 1;
-        }
-        if(seatNumber > 60)
-        {
-            row = 6;
-            column = (seatNumber%60) - 1;
-        }
-        if(seatNumber > 50)
-        {
-            row = 5;
-            column = (seatNumber%50) - 1;
-        }
-        if(seatNumber > 40)
-        {
-            row = 4;
-            column = (seatNumber%40) - 1;
-        }
-        if(seatNumber > 30)
-        {
-            row = 3;
-            column = (seatNumber%30) - 1;
-        }
-        if(seatNumber > 20)
-        {
-            row = 2;
-            column = (seatNumber%20) - 1;
-        }
         if(seatNumber > 10)
         {
-            row = 1;
+            row = seatNumber / 10;
             column = (seatNumber%10) - 1;
         }
-        if(seatNumber <= 10)
+        else
         {
             row = 0;
             column = seatNumber - 1;
